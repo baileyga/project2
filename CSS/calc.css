@@ -28,10 +28,28 @@ h1 .title {
     font-size: 130pt;
 }
 
+/*Style for hyperlinks in website*/
+a:link, a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid blue;
+    padding: 10px 20px;
+    font-size: 15pt;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  /*Style for when mouse hovers over link, so user knows they have selected it*/
+  a:hover, a:active {
+    background-color: light blue;
+    color: gray;
+  }
+
 #navbar {
     background-color: #333;
     position: fixed;
-    top: -50px;
+    top: 0px;
     width: 100%;
     display: block;
     transition: top 0.3s;
