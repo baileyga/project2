@@ -86,6 +86,15 @@ img {
   transition: top 0.3s;
 }
 
+#navbar1 {
+  background-color: #333;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
 #navbar a {
   float: left;
   display: block;
