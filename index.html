@@ -22,7 +22,24 @@
       <!-- Title of Site -->
       <h1 id = "SiteTitle">Adulting for Dummies</h1>
       <hr>
+      <script>
+        var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+        var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 
+        function time() {
+            var today = new Date();
+            var hour = today.getHours();
+            var minute = today.getMinutes();
+            var second = today.getSeconds();
+            var weekday = days[today.getDay()];
+            var month = months[today.getMonth()];
+            var date = today.getDate();
+            var year = today.getFullYear();
+            document.getElementById('date_and_time').innerHTML = hour + ":" + minute + ":" + second + "</br>" + weekday + ", " + month + " " + date + ", " + year;
+        }
+
+        setInterval(time, 1000);        
+    </script>
       <!-- Page 1 with form for user to enter contact info/email -->
       <h2 id = "Header1">Contact Creator Here!</h2>
         <a href = "contact.html">Contact</a>
