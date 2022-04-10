@@ -7,7 +7,24 @@
       <meta charset="utf-8"/>
     </head>
       <body>
-
+        <div id="navbar">
+          <a href="index.html">Home</a>
+          <a href="#home">Sign In/Register</a>
+          <a href="#news">Log Out</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <script>
+          // When the user scrolls down 20px from the top of the document, slide down the navbar
+          window.onscroll = function() {scrollFunction()};
+          
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              document.getElementById("navbar").style.top = "0";
+            } else {
+              document.getElementById("navbar").style.top = "-50px";
+            }
+          }
+          </script>
         <!-- Title of Site -->
         <h1 id = "SiteTitle">Meal Planning 101</h1>
 
