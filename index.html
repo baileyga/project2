@@ -36,6 +36,23 @@
       var dt = new Date();
       document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
       </script>
+      <script>
+        var today = new Date();
+        var hourNow = today.getHours();
+        var greeting;
+        
+        if (hourNow > 18) {
+            greeting = 'Good Evening!';
+        } else if (hourNow > 12) {
+            greeting = 'Good Afternoon!';
+        } else if (hourNow > 0) {
+            greeting = 'Good Morning!';
+        } else {
+            greeting = 'Welcome!';
+        }
+        
+        document.write(greeting);
+      </script>
 
       <!-- Page 1 with form for user to enter contact info/email -->
       <h2 id = "Header1">Contact Creator Here!</h2>
