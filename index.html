@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang = "en">
+    <head>
+      <!-- HTML file for home page -->
+      <title>Adulting for Dummies</title>
+      <link rel="stylesheet" href="css/style.css">
+      <meta charset="utf-8"/>
+    </head>
+    <body>
+      <script>
+        // When the user scrolls down 20px from the top of the document, slide down the navbar
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("navbar").style.top = "0";
+          } else {
+            document.getElementById("navbar").style.top = "-50px";
+          }
+        }
+        </script>
+      <!-- Title of Site -->
+      <h1 id = "SiteTitle">Adulting for Dummies</h1>
+      <hr>
+
+      <!-- Page 1 with form for user to enter contact info/email -->
+      <h2 id = "Header1">Contact Creator Here!</h2>
+        <a href = "contact.html">Contact</a>
+        <hr>
+
+      <!-- Pages detailing benefits of different hobbies -->
+      <h2 id = "Header2">Hobbies that are Good for Wellbeing</h2>
+        <a href = "exercise.html">Exercise</a><br><br>
+        <a href = "yoga.html">Yoga</a><br><br>
+        <a href = "reading.html">Reading</a>
+        <hr>
+
+      <!--  Pages going overr importance of time management and how it can be helpful-->
+      <h2 id = "Header3">Time Management</h2>
+        <a href = "mealplan.html">Meal Planning 101</a><br><br>
+        <a href = "cleaning.html">Important Cleaning Habits</a>
+        <hr>
+
+      <!--  Pages going overr importance of time management and how it can be helpful-->
+        <h2 id = "Header3">Practical Math Applications</h2>
+        <a href = "calc.html">Calculate your Taxes</a><br><br>
+        <hr>
+    </body>
+  </html>
