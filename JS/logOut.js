@@ -1,5 +1,5 @@
 var signedIn = false;
-var signInButton =
+var signInButton = document.getElementById("Login");
 var logOutButton = document.getElementById("logOut");
 
 signInButton.onclick = signIn() {
