@@ -66,7 +66,7 @@ if(isset($_POST["login"]))
  <body>
   <br />
   <div class="container">
-   <h2 align="center">How to create PHP Login Script using Cookies</h2>
+   <h2 align="center">Adulting for Dummies Login</h2>
    <br />
    <div class="panel panel-default">
 
@@ -89,9 +89,8 @@ if(isset($_POST["login"]))
     </div>
    </div>
    <br />
-   <p>Admin email - john_smith@gmail.com</p>
-   <p>Admin Password - password</p>
-   <p>All user password is 'password'</p>
   </div>
+  <p>Admin email - gracebailey@gmail.com</p>
+   <p>Admin Password - project</p>
  </body>
 </html>
