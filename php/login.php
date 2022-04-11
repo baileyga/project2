@@ -63,34 +63,34 @@ if(isset($_POST["login"]))
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  </head>
- <body>
-  <br />
-  <div class="container">
-   <h2 align="center">Adulting for Dummies Login</h2>
-   <br />
-   <div class="panel panel-default">
+    <body>
+    <br />
+    <div class="container">
+    <h2 align="center">Adulting for Dummies Login</h2>
+    <br />
+    <div class="panel panel-default">
 
-    <div class="panel-heading">Login</div>
-    <div class="panel-body">
-     <span><?php echo $message; ?></span>
-     <form method="post">
-      <div class="form-group">
-       <label>User Email</label>
-       <input type="text" name="user_email" id="user_email" class="form-control" />
-      </div>
-      <div class="form-group">
-       <label>Password</label>
-       <input type="password" name="user_password" id="user_password" class="form-control" />
-      </div>
-      <div class="form-group">
-       <input type="submit" name="login" id="login" class="btn btn-info" value="Login" />
-      </div>
-     </form>
+        <div class="panel-heading">Login</div>
+        <div class="panel-body">
+        <span><?php echo $message; ?></span>
+        <form method="post">
+        <div class="form-group">
+        <label>User Email</label>
+        <input type="text" name="user_email" id="user_email" class="form-control" />
+        </div>
+        <div class="form-group">
+        <label>Password</label>
+        <input type="password" name="user_password" id="user_password" class="form-control" />
+        </div>
+        <div class="form-group">
+        <input type="submit" name="login" id="login" class="btn btn-info" value="Login" />
+        </div>
+        </form>
+        </div>
     </div>
-   </div>
-   <br />
-  </div>
-  <p>Admin email - gracebailey@gmail.com</p>
-   <p>Admin Password - project</p>
+    <br />
+    </div>
+    <p align = "center">Admin email - gracebailey@gmail.com</p>
+    <p align = "center">Admin Password - project</p>
  </body>
 </html>
