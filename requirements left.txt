@@ -1,4 +1,4 @@
 array used to hold signed in user's details
 loop used to display user information
 object is user includes username, password, name, email
-variable with global scope can be name of signed in user's username or name
+variable with global scope can be name of signed in user's username or name and boolean signedIn
