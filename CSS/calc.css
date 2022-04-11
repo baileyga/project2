@@ -47,7 +47,7 @@ a:link, a:visited {
   }
 
 #navbar {
-    background-color: #333;
+    background-color: white;
     position: fixed;
     top: 0px;
     width: 100%;
@@ -58,7 +58,7 @@ a:link, a:visited {
   #navbar a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: black;
     text-align: center;
     padding: 15px;
     text-decoration: none;
@@ -66,6 +66,6 @@ a:link, a:visited {
   }
   
   #navbar a:hover {
-    background-color: #ddd;
+    background-color: white;
     color: black;
   }

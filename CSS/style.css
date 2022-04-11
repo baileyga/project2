@@ -78,7 +78,7 @@ img {
 }
 
 #navbar {
-  background-color: #333;
+  background-color: white;
   position: fixed;
   top: -50px;
   width: 100%;
@@ -87,7 +87,7 @@ img {
 }
 
 #navbar1 {
-  background-color: #333;
+  background-color: white;
   position: fixed;
   top: 0px;
   width: 100%;
@@ -98,7 +98,7 @@ img {
 #navbar a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: black;
   text-align: center;
   padding: 15px;
   text-decoration: none;
@@ -106,6 +106,6 @@ img {
 }
 
 #navbar a:hover {
-  background-color: #ddd;
+  background-color: white;
   color: black;
 }
