@@ -70,7 +70,7 @@ if(isset($_POST["login"]))
     <br />
     <div class="panel panel-default">
 
-        <div class="panel-heading">Login</div>
+        <div class="panel-heading">Currently Logged Out</div>
         <div class="panel-body">
         <span><?php echo $message; ?></span>
         <form method="post">
