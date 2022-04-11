@@ -64,6 +64,13 @@ if(isset($_POST["login"]))
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  </head>
     <body>
+    <div id="navbar">
+        <a href="index.html">Home</a>
+        <a href="php/index.php">Login</a>
+        <a id='logOut' href="#logOut">Sign Up</a>
+        <script src='JS/signInOut.js'></script>
+        <a href="contact.html">Contact</a>
+      </div>
     <br />
     <div class="container">
     <h2 align="center">Adulting for Dummies Login</h2>
