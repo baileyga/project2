@@ -21,7 +21,7 @@ if(!isset($_COOKIE["type"]))
    <h2 align="center">Adulting for Dummies Login</h2>
    <br />
    <div align="right">
-    <a href= "index.html">Home</a>
+    <a href= "home.php">Home</a>
    </div>
    <div align="right">
     <a href="logout.php">Logout</a>
