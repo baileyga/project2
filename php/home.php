@@ -1,7 +1,7 @@
 <?php
 //logout.php
 setcookie("type", "", time()-3600);
-
-header("location:index.html");
+$upOne = realpath(dirname("project2", 1));
+header("location:../index.html");
 
 ?>
