@@ -23,6 +23,9 @@ if(!isset($_COOKIE["type"]))
    <div align="right">
     <a href="logout.php">Logout</a>
    </div>
+   <div align="right">
+    <a href="reset.php">Password Reset</a>
+   </div>
    <br />
    <?php
    if(isset($_COOKIE["type"]))
