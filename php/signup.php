@@ -66,7 +66,7 @@ if(isset($_POST["login"]))
     <body>
     <br />
     <div class="container">
-    <h2 align="center">Adulting for Dummies Login</h2>
+    <h2 align="center">Adulting for Dummies Sign Up</h2>
     <br />
     <div class="panel panel-default">
 
@@ -74,6 +74,10 @@ if(isset($_POST["login"]))
         <div class="panel-body">
         <span><?php echo $message; ?></span>
         <form method="post">
+        <div class="form-group">
+        <label>User Name</label>
+        <input type="text" name="user_name" id="user_name" class="form-control" />
+        </div>
         <div class="form-group">
         <label>User Email</label>
         <input type="text" name="user_email" id="user_email" class="form-control" />
@@ -83,7 +87,7 @@ if(isset($_POST["login"]))
         <input type="password" name="user_password" id="user_password" class="form-control" />
         </div>
         <div class="form-group">
-        <input type="submit" name="login" id="login" class="btn btn-info" value="Login" />
+        <input type="submit" name="signup" id="signup" class="btn btn-info" value="Sign Up" />
         </div>
         </form>
         </div>
