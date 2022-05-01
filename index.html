@@ -12,11 +12,13 @@
         <a href="php/index.php">Login</a>
         <a href="php/signup.php">Sign Up</a>
         <a href="contact.html">Contact</a>
-        {% if likedPage == true %}
-            <a onclick="like(liked,'index.html');">Unlike Page</a>
-          {% else %}
-            <a onclick="like(liked,'index.html');">Like Page</a>
-        {% endif %}
+        <script>
+          if (signedIn == true) {
+            <a onclick = "like(liked,'index.html')">Unlike Page</a>
+          } else {
+            <a onclick = "like(liked,'index.html')">Likeike Page</a>
+          }
+        </script>
       </div>
       <script>
         // When the user scrolls down 20px from the top of the document, slide down the navbar
