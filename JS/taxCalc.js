@@ -1,4 +1,3 @@
-
 var $ = function (id) {
     return document.getElementById(id);
 }
@@ -29,4 +28,7 @@ var calculate_tax = function() {
     25% on taxable income over $35,350 to $5555, plus
     */
 }
+}
+window.onload = function () {
+    $("max2colors").onclick = calculate_tax;
 }
