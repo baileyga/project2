@@ -13,9 +13,9 @@
         <a href="php/signup.php">Sign Up</a>
         <a href="contact.html">Contact</a>
         {% if likedPage == true %}
-            <a href = 'codefilename'>Unlike Page</a>
+            <a onclick="like(liked,'index.html');">Unlike Page</a>
           {% else %}
-            <a href = 'otherfilename'>Like Page</a>
+            <a onclick="like(liked,'index.html');">Like Page</a>
         {% endif %}
       </div>
       <script>
@@ -30,6 +30,14 @@
           }
         }
         </script>
+
+        {% if likeError == true%}
+        <div class="wrapper">
+          <div class="no-data float"><i class="fa fa-caret-left fa-md arrow"></i>
+            <p><i class="fa fa-warning"></i>You cannot like a page when not sighned in</p>
+          </div>
+        </div>
+        {% endif %}
         
       <!-- Title of Site -->
       <h1 id = "SiteTitle">Adulting for Dummies</h1>
