@@ -17,32 +17,31 @@
     <section>
         <h1>Income Tax Calculator</h1>
         <script src='JS/taxCalc.js'></script>
+    <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Income Tax Calculator</title>
+    <link rel="stylesheet" href="CSS/calc.css">
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html">Home</a>
+        <a href="#home">Sign In/Register</a>
+        <a href="#news">Log Out</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <br>
+    <br>
+    <section>
+        <div>
+            <label>Enter taxable income:</label>
+            <input type="text" id="income" />
+            <input type="button" value="calculate" name="max2colors" id="max2colors" /><br><br>
+            <label>Income tax owed:</label>
+            <input type="text" id="tax"><br>
+        </div>
+        <script src='JS/taxCalc.js'></script>
     </section>
-    <div class="row">
-        <div class="col1">
-          <label for="income">Income:</label>
-        </div>
-        <div class="col2">
-          <input type="number" name="income" min="0" id="income" required><br>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col1">
-          <label for="wealth">Wealth:</label>
-        </div>
-        <div class="col2">
-          <input type="number" name="wealth" min="0" id="wealth" required><br>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col1">
-          <label for="tax">Tax:</label>
-        </div>
-        <div class="col2">
-          <input type="number" name="tax" min="0" id="tax" disabled>
-        </div>
-      </div>
-    </body>
+  </body>
 </html>
