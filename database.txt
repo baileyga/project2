@@ -1,0 +1,63 @@
+-- BELOW IS ALL OF THE SQL CODE TO CREATE THE INITIAL TABLES IN THE DATABASE
+-- create a database named 'project3' in localhost/phpmyadmin with utf8mb4_general_ci as the collation
+
+-- Database: 'project3'
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user_details`
+--
+
+CREATE TABLE IF NOT EXISTS `user_details` (
+  `user_id` int(11) NOT NULL,
+  `user_email` varchar(200) NOT NULL,
+  `user_password` varchar(200) NOT NULL,
+  `user_name` varchar(200) NOT NULL,
+  `user_type` enum('master','user') NOT NULL,
+  `user_image` varchar(150) NOT NULL,
+  `user_status` enum('Active','Inactive') NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user_details`
+--
+
+INSERT INTO `user_details` (`user_id`, `user_email`, `user_password`, `user_name`, `user_type`, `user_image`, `user_status`) VALUES
+(1, 'gracebailey@gmail.com', '$2a$04$GYl5BAb9y7no9yI336e0b.REpiSJ.BmysPYEG3vGobHht/f4dwHQu', 'Grace Bailey', 'master', 'gracebailey.jpg', 'Active'),
+(2, 'alexbuchanan@gmail.com', '$2y$10$I0MzyozponGM2blshQStXeX4tMH/8UgcqzWhem/rqH3LCe6QC4sYK', 'Alex Buchanan', 'user', 'alexbuchanan.jpg', 'Active');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `user_details`
+--
+ALTER TABLE `user_details`
+  ADD PRIMARY KEY (`user_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+--
+-- AUTO_INCREMENT for table `user_details`
+--
+ALTER TABLE `user_details`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+
+-- Table structure for table `favorites`
+--
+
+CREATE TABLE IF NOT EXISTS `favorites` (
+  `user_id` int(11) NOT NULL,
+  `page_name' varchar(200) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+
+-- Indexes for table `favorites`
+--
+ALTER TABLE `favorites`
+  ADD PRIMARY KEY ('page_name'),
+  ADD FOREIGN KEY ('user_id');
+

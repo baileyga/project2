@@ -1,4 +1,4 @@
 <?php
 //database_connection.php
-$connect = new PDO("mysql:host=localhost;dbname=project2", "root", "");
+$connect = new PDO("mysql:host=localhost;dbname=project3", "root", "");
 ?>
