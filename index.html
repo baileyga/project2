@@ -12,13 +12,6 @@
         <a href="php/index.php">Login</a>
         <a href="php/signup.php">Sign Up</a>
         <a href="contact.html">Contact</a>
-        <script>
-          if (signedIn == true) {
-            <a onclick = "like(liked,'index.html')">Unlike Page</a>
-          } else {
-            <a onclick = "like(liked,'index.html')">Likeike Page</a>
-          }
-        </script>
       </div>
       <script>
         // When the user scrolls down 20px from the top of the document, slide down the navbar
@@ -32,14 +25,6 @@
           }
         }
         </script>
-
-        {% if likeError == true%}
-        <div class="wrapper">
-          <div class="no-data float"><i class="fa fa-caret-left fa-md arrow"></i>
-            <p><i class="fa fa-warning"></i>You cannot like a page when not sighned in</p>
-          </div>
-        </div>
-        {% endif %}
         
       <!-- Title of Site -->
       <h1 id = "SiteTitle">Adulting for Dummies</h1>
