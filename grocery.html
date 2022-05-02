@@ -3,7 +3,7 @@
     <head>
         <!-- HTML file for Yoga page -->
         <title>Grocery</title>
-        <link rel="stylesheet" href="css/taxCalc.css">
+        <link rel="stylesheet" href="css/calc.css">
         <meta charset="utf-8"/>
       </head>
         <body>
@@ -19,9 +19,8 @@
         <br>
         <table border 1px solid black >
             <tr>
-                <th>Item</th>
-                <th>Amount</th>
-                <th>Price</th>
+                <th>Grocery List Items</th>
+                <th>Budget</th>
                 <th></th>
             </tr>
             {% for d in data %}
@@ -36,9 +35,8 @@
             {% endfor %}
             <form action="/ins" method="post">
                 <tr>
-                    <td><input type="text" name="item" value="{{ vin }}"></td>
-                    <td><input type="text" name="amount" value="{{ make }}"></td>
-                    <td><input type="text" name="price" value="{{ price }}"></td>
+                    <td><input type="text" name="Grocery List Items" value="{{ vin }}"></td>
+                    <td><input type="text" name="Budget" value="{{ make }}"></td>
                     <td>
                         <input type='submit' value='Insert' >
                     </td>
