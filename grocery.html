@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <!-- HTML file for Yoga page -->
+        <title>Yoga</title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta charset="utf-8"/>
+      </head>
+        <body>
+          <div id="navbar">
+            <a href="index.html">Home</a>
+            <a href="php/index.php">Login</a>
+            <a href="php/signup.php">Sign Up</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <script>
+            // When the user scrolls down 20px from the top of the document, slide down the navbar
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("navbar").style.top = "0";
+              } else {
+                document.getElementById("navbar").style.top = "-50px";
+              }
+            }
+            </script>
+
+            
+
+    <body>
+        <h1>Groceries!</h1>
+        <br>
+        <table border 1px solid black >
+            <tr>
+                <th>Item</th>
+                <th>Amount</th>
+                <th>Price</th>
+                <th></th>
+            </tr>
+            {% for d in data %}
+            <tr>
+                <td>{{ d[0] }}</td>
+                <td>{{ d[1] }}</td>
+                <td>{{ d[2] }}</td>
+                    <td>
+                        <a href='/del/{{ d[0] }}'>Delete</a>>
+                    </td>
+            </tr>
+            {% endfor %}
+            <form action="/ins" method="post">
+                <tr>
+                    <td><input type="text" name="item" value="{{ vin }}"></td>
+                    <td><input type="text" name="amount" value="{{ make }}"></td>
+                    <td><input type="text" name="price" value="{{ price }}"></td>
+                    <td>
+                        <input type='submit' value='Insert' >
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </body>
+</html>
