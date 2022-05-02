@@ -14,7 +14,7 @@ FROM grocery;
 
 @app.route('/')
 def select():
-    con = psycopg.connect("host=localhost dbname=sec1 user=buchanaj password=111948864")
+    con = psycopg.connect("host=localhost dbname=project3 user=root password=root")
     cur = con.cursor()
     cur.execute(sql)
     data = cur.fetchall()
@@ -31,7 +31,7 @@ def insert():
     vin = request.form.get('item','')
     make = request.form.get('amount','')
     price = request.form.get('price','')
-    con = psycopg.connect("host=localhost dbname=sec1 user=buchanaj password=111948864")
+    con = psycopg.connect("host=localhost dbname=project3 user=root password=root")
     cur = con.cursor()
     cur.execute(newCar, (vin,make,price))
     con.commit()
@@ -44,7 +44,7 @@ where vin = %s;
 
 @app.route('/del/<item>')
 def delete(item):
-    con = psycopg.connect("host=localhost dbname=sec1 user=buchanaj password=111948864")
+    con = psycopg.connect("host=localhost dbname=project3 user=root password=root")
     cur = con.cursor()
     cur.execute(removeItem, (item,))
     con.commit()

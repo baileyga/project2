@@ -47,17 +47,18 @@ ALTER TABLE `user_details`
 ALTER TABLE `user_details`
   MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 
--- Table structure for table `favorites`
+-- Table structure for table `grocery`
 --
 
-CREATE TABLE IF NOT EXISTS `favorites` (
+CREATE TABLE IF NOT EXISTS `grocery` (
   `user_id` int(11) NOT NULL,
-  `page_name' varchar(200) NOT NULL
+  `list` varchar(750) NOT NULL,
+  `budget` int(11) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
--- Indexes for table `favorites`
+-- Indexes for table `grocery`
 --
-ALTER TABLE `favorites`
-  ADD PRIMARY KEY ('page_name'),
-  ADD FOREIGN KEY ('user_id');
+ALTER TABLE `grocery`
+  ADD PRIMARY KEY (`list`),
+  ADD FOREIGN KEY (`user_id`);
 
